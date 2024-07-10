@@ -16,6 +16,8 @@ brain Brain;
 
 
 // START V5 MACROS
+// MACROS: series of functions that is grouped in a single command to perform the requested task automatically
+
 #define waitUntil(condition)                                                   \
   do {                                                                         \
     wait(5, msec);                                                             \
