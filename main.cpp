@@ -1,49 +1,7 @@
-#pragma region VEXcode Generated Robot Configuration
-// Make sure all required headers are included.
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <math.h>
-#include <string.h>
-
-
-#include "vex.h"
-
-using namespace vex;
-
-// Brain should be defined by default
-brain Brain;
-
-
-// START V5 MACROS
-// MACROS: series of functions that is grouped in a single command to perform the requested task automatically
-
-#define waitUntil(condition)                                                   \
-  do {                                                                         \
-    wait(5, msec);                                                             \
-  } while (!(condition))
-
-#define repeat(iterations)                                                     \
-  for (int iterator = 0; iterator < iterations; iterator++)
-// END V5 MACROS
-
-
 // Robot configuration code.
 motor LeftMotor = motor(PORT1, ratio18_1, false);
 
 motor RightMotor = motor(PORT2, ratio18_1, true);
-
-
-
-
-// Helper to make playing sounds from the V5 in VEXcode easier and
-// keeps the code cleaner by making it clear what is happening.
-void playVexcodeSound(const char *soundName) {
-  printf("VEXPlaySound:%s\n", soundName);
-  wait(5, msec);
-}
-
-#pragma endregion VEXcode Generated Robot Configuration
 
 // ----------------------------------------------------------------------------
 //                                                                            
